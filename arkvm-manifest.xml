@@ -46,7 +46,6 @@
 
   <!-- ArkUI -->
   <!-- <project name="arkui_ace_engine" path="foundation/arkui/ace_engine"/> -->
-
   <project name="arkui_napi" path="foundation/arkui/napi"/>
 
   <!-- graphics and windowing -->
@@ -117,14 +116,12 @@
   <project name="third_party_rust_unicode-ident" path="third_party/rust/crates/unicode-ident"/>
   <project name="third_party_rust_unicode-width" path="third_party/rust/crates/unicode-width"/>
 
-
   <remote fetch="https://github.com/notrobot1" name="fork"/>
 
   <project name="arkui_ace_engine" path="foundation/arkui/ace_engine"
-          remote="fork" revision="arkvm"/>
+           remote="fork" revision="arkvm"/>
   <project name="arkcompiler_ets_runtime" path="arkcompiler/ets_runtime"
-          remote="fork" revision="arkvm"/>
-
+           remote="fork" revision="arkvm"/>
 
   <!--
     NOT included: everything needed to package the previewer SDK itself
