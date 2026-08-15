@@ -119,9 +119,9 @@
   <remote fetch="https://github.com/notrobot1" name="fork"/>
 
   <project name="arkui_ace_engine" path="foundation/arkui/ace_engine"
-           remote="fork" revision="arkvm"/>
+           remote="fork" revision="main"/>
   <project name="arkcompiler_ets_runtime" path="arkcompiler/ets_runtime"
-           remote="fork" revision="arkvm"/>
+           remote="fork" revision="main"/>
 
   <!--
     NOT included: everything needed to package the previewer SDK itself
