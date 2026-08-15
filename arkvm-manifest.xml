@@ -11,18 +11,18 @@
     clang_x64/graphic/graphic_2d/libglfw_render_context.so
 
   Derived from `ninja -t commands` of those targets, mapped onto
-  .repo/manifests/ohos/ohos.xml by longest-prefix match.
+  .repo/manifests/ohos/ohos.xml by longest prefix match.
 
   Usage:
-    repo init -u https://github.com/openharmony/manifest.git \
-              -b OpenHarmony-7.0-Release --no-repo-verify
-    cp arkvm-manifest.xml .repo/manifests/arkvm.xml
-    repo init -m arkvm.xml
+    repo init -u <this manifest repo> -b main -m arkvm-manifest.xml
     repo sync -c -j8
     ./build/prebuilts_download.sh
 
   Toolchains (clang, ninja, node) are fetched by prebuilts_download.sh,
   not by repo.
+
+  Note for editors of this file: XML comments may not contain a double
+  hyphen, so command line flags are written without their leading dashes.
 -->
 <manifest>
   <remote fetch="https://github.com/openharmony" name="github"/>
