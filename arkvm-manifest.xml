@@ -60,7 +60,7 @@
   <project name="bundlemanager_bundle_framework" path="foundation/bundlemanager/bundle_framework"/>
 
   <!-- base libraries -->
-  <project name="global_i18n" path="base/global/i18n"/>
+  <project name="global_i18n_standard" path="base/global/i18n"/>
   <project name="global_resource_management" path="base/global/resource_management"/>
   <project name="hiviewdfx_hilog" path="base/hiviewdfx/hilog"/>
   <project name="commonlibrary_c_utils" path="commonlibrary/c_utils"/>
