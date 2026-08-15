@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Minimal OpenHarmony manifest for the arkVM2 project (GitHub mirror).
+  Branch: OpenHarmony-7.0-Release
+
+  Covers exactly the repositories required to build:
+    clang_x64/arkui/ace_engine/libace_compatible.so
+    clang_x64/arkui/ace_engine/libarkui_button.so
+    clang_x64/arkcompiler/ets_runtime/libark_jsruntime.so
+    clang_x64/window/window_manager/libpreviewer_window.so
+    clang_x64/graphic/graphic_2d/libglfw_render_context.so
+
+  Derived from `ninja -t commands` of those targets, mapped onto
+  .repo/manifests/ohos/ohos.xml by longest-prefix match.
+
+  Usage:
+    repo init -u https://github.com/openharmony/manifest.git \
+              -b OpenHarmony-7.0-Release --no-repo-verify
+    cp arkvm-manifest.xml .repo/manifests/arkvm.xml
+    repo init -m arkvm.xml
+    repo sync -c -j8
+    ./build/prebuilts_download.sh
+
+  Toolchains (clang, ninja, node) are fetched by prebuilts_download.sh,
+  not by repo.
+-->
+<manifest>
+  <remote fetch="https://github.com/openharmony" name="github"/>
+  <remote fetch="https://gitee.com/openharmony" name="origin"
+          review="https://openharmony.gitee.com/openharmony/"/>
+  <remote fetch="https://gitcode.com/openharmony" name="gitcode"
+          review="https://gitcode.com/openharmony/"/>
+  <default remote="github" revision="OpenHarmony-7.0-Release" sync-j="4"/>
+
+  <!-- build system -->
+  <project name="build" path="build"/>
+
+  <!-- product configuration: read by GN, never appears in compile commands,
+       but the build cannot be configured without it -->
+  <project name="productdefine_common" path="productdefine/common"/>
+
+  <!-- ARK: bytecode runtime, frontend, core -->
+  <project name="arkcompiler_ets_frontend" path="arkcompiler/ets_frontend"/>
+  <!-- <project name="arkcompiler_ets_runtime" path="arkcompiler/ets_runtime"/> -->
+  <project name="arkcompiler_runtime_core" path="arkcompiler/runtime_core"/>
+
+  <!-- ArkUI 
+  <project name="arkui_ace_engine" path="foundation/arkui/ace_engine"/>
+  -->
+  <project name="arkui_napi" path="foundation/arkui/napi"/>
+
+  <!-- graphics and windowing -->
+  <project name="graphic_graphic_2d" path="foundation/graphic/graphic_2d"/>
+  <project name="graphic_graphic_surface" path="foundation/graphic/graphic_surface"/>
+  <project name="graphic_graphics_effect" path="foundation/graphic/graphics_effect"/>
+  <project name="window_window_manager" path="foundation/window/window_manager"/>
+  <project name="ide_previewer" path="ide/tools/previewer"/>
+
+  <!-- headers pulled in by ace_engine -->
+  <project name="ability_ability_runtime" path="foundation/ability/ability_runtime"/>
+  <project name="bundlemanager_bundle_framework" path="foundation/bundlemanager/bundle_framework"/>
+
+  <!-- base libraries -->
+  <project name="global_i18n" path="base/global/i18n"/>
+  <project name="global_resource_management" path="base/global/resource_management"/>
+  <project name="hiviewdfx_hilog" path="base/hiviewdfx/hilog"/>
+  <project name="commonlibrary_c_utils" path="commonlibrary/c_utils"/>
+  <project name="commonlibrary_qrcode_generator" path="commonlibrary/qrcode_generator"/>
+
+  <!-- third party -->
+  <project name="third_party_egl" path="third_party/EGL"/>
+  <project name="third_party_opengles" path="third_party/openGLES"/>
+  <project name="third_party_abseil-cpp" path="third_party/abseil-cpp"/>
+  <project name="third_party_bounds_checking_function" path="third_party/bounds_checking_function"/>
+  <project name="third_party_brotli" path="third_party/brotli"/>
+  <project name="third_party_cJSON" path="third_party/cJSON"/>
+  <project name="third_party_cares" path="third_party/cares"/>
+  <project name="third_party_css-what" path="third_party/css-what"/>
+  <project name="third_party_curl" path="third_party/curl"/>
+  <project name="third_party_expat" path="third_party/expat"/>
+  <project name="third_party_freetype" path="third_party/freetype"/>
+  <project name="third_party_glfw" path="third_party/glfw"/>
+  <project name="third_party_harfbuzz" path="third_party/harfbuzz"/>
+  <project name="third_party_icu" path="third_party/icu"/>
+  <project name="third_party_jsframework" path="third_party/jsframework"/>
+  <project name="third_party_json" path="third_party/json"/>
+  <project name="third_party_jsoncpp" path="third_party/jsoncpp"/>
+  <project name="third_party_libpng" path="third_party/libpng"/>
+  <project name="third_party_libuv" path="third_party/libuv"/>
+  <project name="third_party_nghttp2" path="third_party/nghttp2"/>
+  <project name="third_party_node" path="third_party/node"/>
+  <project name="third_party_openhitls" path="third_party/openhitls"/>
+  <project name="third_party_openssl" path="third_party/openssl"/>
+  <project name="third_party_protobuf" path="third_party/protobuf"/>
+  <project name="third_party_skia" path="third_party/skia"/>
+  <project name="third_party_zlib" path="third_party/zlib"/>
+
+  <!-- rust crates, pulled in through the build tooling -->
+  <project name="third_party_rust_bitflags" path="third_party/rust/crates/bitflags"/>
+  <project name="third_party_rust_clap" path="third_party/rust/crates/clap"/>
+  <project name="third_party_rust_codespan" path="third_party/rust/crates/codespan"/>
+  <project name="third_party_rust_cxx" path="third_party/rust/crates/cxx"/>
+  <project name="third_party_rust_heck" path="third_party/rust/crates/heck"/>
+  <project name="third_party_rust_io-lifetimes" path="third_party/rust/crates/io-lifetimes"/>
+  <project name="third_party_rust_is-terminal" path="third_party/rust/crates/is-terminal"/>
+  <project name="third_party_rust_libc" path="third_party/rust/crates/libc"/>
+  <project name="third_party_rust_linux-raw-sys" path="third_party/rust/crates/linux-raw-sys"/>
+  <project name="third_party_rust_memchr" path="third_party/rust/crates/memchr"/>
+  <project name="third_party_rust_once_cell" path="third_party/rust/crates/once_cell"/>
+  <project name="third_party_rust_os_str_bytes" path="third_party/rust/crates/os_str_bytes"/>
+  <project name="third_party_rust_proc-macro2" path="third_party/rust/crates/proc-macro2"/>
+  <project name="third_party_rust_quote" path="third_party/rust/crates/quote"/>
+  <project name="third_party_rust_rustix" path="third_party/rust/crates/rustix"/>
+  <project name="third_party_rust_strsim-rs" path="third_party/rust/crates/strsim-rs"/>
+  <project name="third_party_rust_syn" path="third_party/rust/crates/syn"/>
+  <project name="third_party_rust_termcolor" path="third_party/rust/crates/termcolor"/>
+  <project name="third_party_rust_unicode-ident" path="third_party/rust/crates/unicode-ident"/>
+  <project name="third_party_rust_unicode-width" path="third_party/rust/crates/unicode-width"/>
+
+
+  <remote fetch="https://github.com/notrobot1" name="fork"/>
+
+  <project name="arkui_ace_engine" path="foundation/arkui/ace_engine"
+          remote="fork" revision="arkvm"/>
+  <project name="arkcompiler_ets_runtime" path="arkcompiler/ets_runtime"
+          remote="fork" revision="arkvm"/>
+
+
+  <!--
+    NOT included: everything needed to package the previewer SDK itself
+    (out/sdk/ohos-sdk/linux/previewer/common with its .abc modules, mock
+    system APIs, fonts and system resources). We consume that directory at
+    runtime but do not rebuild it. If you want to build it from source, add
+    at least these and re-run the collection script against the SDK targets:
+
+      interface/sdk-js
+      commonlibrary/ets_utils
+      developtools/ace_ets2bundle
+      developtools/ace_js2bundle
+      developtools/packing_tool
+      developtools/global_resource_tool
+      arkcompiler/toolchain
+      foundation/multimedia/image_framework
+
+    Verify the exact repository names before adding, e.g.:
+      grep -rn 'path="interface/sdk-js"' .repo/manifests/ohos/
+  -->
+</manifest>
