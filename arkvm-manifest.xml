@@ -44,9 +44,9 @@
   <!-- <project name="arkcompiler_ets_runtime" path="arkcompiler/ets_runtime"/> -->
   <project name="arkcompiler_runtime_core" path="arkcompiler/runtime_core"/>
 
-  <!-- ArkUI 
-  <project name="arkui_ace_engine" path="foundation/arkui/ace_engine"/>
-  -->
+  <!-- ArkUI -->
+  <!-- <project name="arkui_ace_engine" path="foundation/arkui/ace_engine"/> -->
+
   <project name="arkui_napi" path="foundation/arkui/napi"/>
 
   <!-- graphics and windowing -->
