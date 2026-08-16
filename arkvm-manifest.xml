@@ -173,6 +173,7 @@
   <project name="third_party_lz4" path="third_party/lz4"/>
   <project name="linux_frame_aware_sched" path="foundation/resourceschedule/frame_aware_sched" remote="gitcode" />
   <project name="drivers_interface" path="drivers/interface"/>
+  <project name="third_party_vma" path="third_party/vma" remote="gitcode" />
 
   <!-- insert -->
   
