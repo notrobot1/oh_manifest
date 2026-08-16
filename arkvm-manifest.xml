@@ -147,7 +147,14 @@
   <project name="distributeddatamgr_data_share" path="foundation/distributeddatamgr/data_share"/>
   <project name="multimodalinput_input" path="foundation/multimodalinput/input"/>
   <project name="sensors_miscdevice" path="base/sensors/miscdevice"/>
-
+ 
+    <project name="systemabilitymgr_safwk" path="foundation/systemabilitymgr/safwk"/>
+    <project name="accessibility" path="foundation/barrierfree/accessibility"/>
+    <project name="msdp_device_status" path="base/msdp/device_status"/>
+    <project name="inputmethod_imf" path="base/inputmethod/imf"/>
+    <project name="hiviewdfx_hicollie" path="base/hiviewdfx/hicollie"/>
+    <project name="multimedia_image_framework" path="foundation/multimedia/image_framework"/>
+    <project name="filemanagement_app_file_service" path="foundation/filemanagement/app_file_service"/>
   <!-- insert -->
   
   <remote fetch="https://github.com/notrobot1" name="fork"/>
