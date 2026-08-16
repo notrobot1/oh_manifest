@@ -161,6 +161,7 @@
     <project name="distributeddatamgr_udmf" path="foundation/distributeddatamgr/udmf"/>
     <project name="ability_form_fwk" path="foundation/ability/form_fwk"/>
     <project name="multimedia_media_library" path="foundation/multimedia/media_library"/>
+  <project name="third_party_opencl-headers" path="third_party/opencl-headers"/>
   <!-- insert -->
   
   <remote fetch="https://github.com/notrobot1" name="fork"/>
