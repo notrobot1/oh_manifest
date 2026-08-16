@@ -133,6 +133,7 @@
   <project name="startup_init" path="base/startup/init"/>
   <project name="hiviewdfx_hitrace" path="base/hiviewdfx/hitrace"/>
   <project name="hiviewdfx_hiview" path="base/hiviewdfx/hiview"/>
+  <project name="resourceschedule_qos_manager" path="foundation/resourceschedule/qos_manager"/>
 
 
   
