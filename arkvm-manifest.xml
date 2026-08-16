@@ -167,6 +167,10 @@
   <project name="account_os_account" path="base/account/os_account" remote="gitcode" />
   <project name="graphic_graphic_3d" path="foundation/graphic/graphic_3d" remote="gitcode" />
   <project name="commonlibrary_ets_utils" path="commonlibrary/ets_utils" remote="gitcode" />
+  <project name="security_access_token" path="base/security/access_token"/>
+  <project name="customization_config_policy" path="base/customization/config_policy"/>
+  <project name="resourceschedule_resource_schedule_service" path="foundation/resourceschedule/resource_schedule_service"/>
+  <project name="third_party_lz4" path="third_party/lz4"/>
 
 
   <!-- insert -->
