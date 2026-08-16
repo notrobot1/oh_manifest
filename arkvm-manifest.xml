@@ -127,6 +127,7 @@
   <project name="developtools_integration_verification" path="developtools/integration_verification"/>
   <project name="interface_sdk_c" path="interface/sdk_c"/>
   <project name="third_party_musl" path="third_party/musl"/>
+  <project name="hiviewdfx_hisysevent" path="base/hiviewdfx/hisysevent"/>
 
   <project name="hiviewdfx_faultloggerd" path="base/hiviewdfx/faultloggerd"/>
   <project name="startup_init" path="base/startup/init"/>
