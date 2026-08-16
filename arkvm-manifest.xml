@@ -142,6 +142,7 @@
   <project name="global_i18n_standard" path="base/global/i18n" revision="master"/>
   <project name="ability_ability_base" path="foundation/ability/ability_base"/>
   <project name="hiviewdfx_hichecker" path="base/hiviewdfx/hichecker"/>
+  <project name="notification_common_event_service" path="base/notification/common_event_service"/>
   
   
   <remote fetch="https://github.com/notrobot1" name="fork"/>
