@@ -138,6 +138,7 @@
   <project name="third_party_googletest" path="third_party/googletest"/>
   <project name="notification_eventhandler" path="base/notification/eventhandler"/>
   <project name="ability_idl_tool" path="foundation/ability/idl_tool"/>
+  <project name="third_party_lzma" path="third_party/lzma"/>
   
   <remote fetch="https://github.com/notrobot1" name="fork"/>
   <project name="arkui_ace_engine" path="foundation/arkui/ace_engine"
