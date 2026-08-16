@@ -163,6 +163,8 @@
     <project name="multimedia_media_library" path="foundation/multimedia/media_library"/>
   <project name="third_party_opencl-headers" path="third_party/opencl-headers"/>
   <project name="multimedia_audio_framework" path="foundation/multimedia/audio_framework" remote="gitcode"/>
+  <project name="multimedia_player_framework" path="foundation/multimedia/player_framework" remote="gitcode" />
+
 
   <!-- insert -->
   
