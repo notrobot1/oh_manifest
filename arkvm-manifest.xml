@@ -121,6 +121,7 @@
   <project name="developtools_ace_js2bundle" path="developtools/ace_js2bundle"/>
   <project name="third_party_parse5" path="third_party/parse5"/>
   <project name="third_party_weex-loader" path="third_party/weex-loader"/>
+  <project name="interface_sdk-js" path="interface/sdk-js"/>
 
   
   <remote fetch="https://github.com/notrobot1" name="fork"/>
