@@ -123,6 +123,7 @@
   <project name="third_party_weex-loader" path="third_party/weex-loader"/>
   <project name="interface_sdk-js" path="interface/sdk-js"/>
   <project name="third_party_jinja2" path="third_party/jinja2"/>
+  <project name="third_party_markupsafe" path="third_party/markupsafe"/>
 
   
   <remote fetch="https://github.com/notrobot1" name="fork"/>
