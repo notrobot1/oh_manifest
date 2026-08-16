@@ -148,6 +148,7 @@
   <project name="multimodalinput_input" path="foundation/multimodalinput/input"/>
   <project name="sensors_miscdevice" path="base/sensors/miscdevice"/>
 
+  <!-- insert -->
   
   <remote fetch="https://github.com/notrobot1" name="fork"/>
   <project name="arkui_ace_engine" path="foundation/arkui/ace_engine"
