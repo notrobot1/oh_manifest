@@ -49,7 +49,7 @@
   <project name="arkui_napi" path="foundation/arkui/napi"/>
 
   <!-- graphics and windowing -->
-  <project name="graphic_graphic_2d" path="foundation/graphic/graphic_2d"/>
+  <project name="graphic_graphic_2d" path="foundation/graphic/graphic_2d" remote="gitcode" />
   <project name="graphic_graphic_surface" path="foundation/graphic/graphic_surface"/>
   <project name="graphic_graphics_effect" path="foundation/graphic/graphics_effect"/>
   <project name="window_window_manager" path="foundation/window/window_manager"/>
