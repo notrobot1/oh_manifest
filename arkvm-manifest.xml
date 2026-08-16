@@ -148,11 +148,11 @@
   <project name="multimodalinput_input" path="foundation/multimodalinput/input"/>
   <project name="sensors_miscdevice" path="base/sensors/miscdevice"/>
  
-    <project name="systemabilitymgr_safwk" path="foundation/systemabilitymgr/safwk"/>
-    <project name="accessibility" path="foundation/barrierfree/accessibility"/>
-    <project name="msdp_device_status" path="base/msdp/device_status"/>
-    <project name="inputmethod_imf" path="base/inputmethod/imf"/>
-    <project name="hiviewdfx_hicollie" path="base/hiviewdfx/hicollie"/>
+  <project name="systemabilitymgr_safwk" path="foundation/systemabilitymgr/safwk"/>
+  <project name="accessibility" path="foundation/barrierfree/accessibility"/>
+  <project name="msdp_device_status" path="base/msdp/device_status"/>
+  <project name="inputmethod_imf" path="base/inputmethod/imf"/>
+  <project name="hiviewdfx_hicollie" path="base/hiviewdfx/hicollie"/>
   <project name="multimedia_image_framework" path="foundation/multimedia/image_framework"/>
   <project name="filemanagement_app_file_service" path="foundation/filemanagement/app_file_service"/>
     
@@ -166,6 +166,7 @@
   <project name="multimedia_player_framework" path="foundation/multimedia/player_framework" remote="gitcode" />
   <project name="account_os_account" path="base/account/os_account" remote="gitcode" />
   <project name="graphic_graphic_3d" path="foundation/graphic/graphic_3d" remote="gitcode" />
+  <project name="commonlibrary_ets_utils" path="commonlibrary/ets_utils" remote="gitcode" />
 
 
   <!-- insert -->
