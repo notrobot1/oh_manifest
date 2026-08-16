@@ -171,7 +171,7 @@
   <project name="customization_config_policy" path="base/customization/config_policy"/>
   <project name="resourceschedule_resource_schedule_service" path="foundation/resourceschedule/resource_schedule_service"/>
   <project name="third_party_lz4" path="third_party/lz4"/>
-  <project name="linux_frame_aware_sched" path="foundation/resourceschedule/frame_aware_sched"/>
+  <project name="linux_frame_aware_sched" path="foundation/resourceschedule/frame_aware_sched" remote="gitcode" />
 
 
   <!-- insert -->
