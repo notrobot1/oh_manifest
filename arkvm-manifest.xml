@@ -135,6 +135,7 @@
   <project name="hiviewdfx_hiview" path="base/hiviewdfx/hiview"/>
   <project name="resourceschedule_qos_manager" path="foundation/resourceschedule/qos_manager"/>
   <project name="resourceschedule_ffrt" path="foundation/resourceschedule/ffrt"/>
+  <project name="third_party_googletest" path="third_party/googletest"/>
   
   <remote fetch="https://github.com/notrobot1" name="fork"/>
   <project name="arkui_ace_engine" path="foundation/arkui/ace_engine"
