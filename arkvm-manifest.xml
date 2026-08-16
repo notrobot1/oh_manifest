@@ -153,18 +153,19 @@
     <project name="msdp_device_status" path="base/msdp/device_status"/>
     <project name="inputmethod_imf" path="base/inputmethod/imf"/>
     <project name="hiviewdfx_hicollie" path="base/hiviewdfx/hicollie"/>
-    <project name="multimedia_image_framework" path="foundation/multimedia/image_framework"/>
-    <project name="filemanagement_app_file_service" path="foundation/filemanagement/app_file_service"/>
+  <project name="multimedia_image_framework" path="foundation/multimedia/image_framework"/>
+  <project name="filemanagement_app_file_service" path="foundation/filemanagement/app_file_service"/>
     
-    <project name="systemabilitymgr_samgr" path="foundation/systemabilitymgr/samgr"/>
-    <project name="resourceschedule_background_task_mgr" path="foundation/resourceschedule/background_task_mgr"/>
-    <project name="distributeddatamgr_udmf" path="foundation/distributeddatamgr/udmf"/>
-    <project name="ability_form_fwk" path="foundation/ability/form_fwk"/>
-    <project name="multimedia_media_library" path="foundation/multimedia/media_library"/>
+  <project name="systemabilitymgr_samgr" path="foundation/systemabilitymgr/samgr"/>
+  <project name="resourceschedule_background_task_mgr" path="foundation/resourceschedule/background_task_mgr"/>
+  <project name="distributeddatamgr_udmf" path="foundation/distributeddatamgr/udmf"/>
+  <project name="ability_form_fwk" path="foundation/ability/form_fwk"/>
+  <project name="multimedia_media_library" path="foundation/multimedia/media_library"/>
   <project name="third_party_opencl-headers" path="third_party/opencl-headers"/>
   <project name="multimedia_audio_framework" path="foundation/multimedia/audio_framework" remote="gitcode"/>
   <project name="multimedia_player_framework" path="foundation/multimedia/player_framework" remote="gitcode" />
   <project name="account_os_account" path="base/account/os_account" remote="gitcode" />
+  <project name="graphic_graphic_3d" path="foundation/graphic/graphic_3d" remote="gitcode" />
 
 
   <!-- insert -->
