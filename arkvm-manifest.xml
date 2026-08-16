@@ -146,6 +146,7 @@
   <project name="communication_ipc" path="foundation/communication/ipc"/>
   <project name="distributeddatamgr_data_share" path="foundation/distributeddatamgr/data_share"/>
   <project name="multimodalinput_input" path="foundation/multimodalinput/input"/>
+  <project name="sensors_miscdevice" path="base/sensors/miscdevice"/>
 
   
   <remote fetch="https://github.com/notrobot1" name="fork"/>
