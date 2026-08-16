@@ -137,6 +137,7 @@
   <project name="resourceschedule_ffrt" path="foundation/resourceschedule/ffrt"/>
   <project name="third_party_googletest" path="third_party/googletest"/>
   <project name="notification_eventhandler" path="base/notification/eventhandler"/>
+  <project name="ability_idl_tool" path="foundation/ability/idl_tool"/>
   
   <remote fetch="https://github.com/notrobot1" name="fork"/>
   <project name="arkui_ace_engine" path="foundation/arkui/ace_engine"
