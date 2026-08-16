@@ -124,6 +124,8 @@
   <project name="interface_sdk-js" path="interface/sdk-js"/>
   <project name="third_party_jinja2" path="third_party/jinja2"/>
   <project name="third_party_markupsafe" path="third_party/markupsafe"/>
+  <project name="developtools_integration_verification" path="developtools/integration_verification"/>
+  <project name="device_board_ohos" path="device/board/ohos"/>
 
   
   <remote fetch="https://github.com/notrobot1" name="fork"/>
