@@ -119,7 +119,9 @@
 
   <project name="developtools_ace_ets2bundle" path="developtools/ace_ets2bundle"/>
   <project name="developtools_ace_js2bundle" path="developtools/ace_js2bundle"/>
+  <project name="third_party_parse5" path="third_party/parse5"/>
 
+  
   <remote fetch="https://github.com/notrobot1" name="fork"/>
   <project name="arkui_ace_engine" path="foundation/arkui/ace_engine"
            remote="fork" revision="main"/>
